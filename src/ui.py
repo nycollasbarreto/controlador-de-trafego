@@ -1,10 +1,10 @@
 import pygame as pg
 
-from assets.scripts.locals import BASE_DIRECTORY
+from settings import FONTS_DIRECTORY
 
 
 def render_text(message: str, font_size: int = 20, color: pg.Color = (255, 255, 255), font_name: str = "Jersey20", shadow_offset: int = 2) -> pg.Surface:
-    font = pg.font.Font(BASE_DIRECTORY / "fonts" / font_name / "font.ttf", font_size)
+    font = pg.font.Font(FONTS_DIRECTORY / font_name / "font.ttf", font_size)
 
     if shadow_offset:
         shadow = font.render(message, True, (0, 0, 0))

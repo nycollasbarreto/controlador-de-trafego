@@ -2,12 +2,11 @@ import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "HIDE"
 import pygame as pg
 
-import assets.scripts.ui as ui
+import ui
 
 GAME_VERSION = "[InDev]"
 
 WHITE = (255, 255, 255)
-GRAY = (200, 200, 200)
 BLACK = (0, 0, 0)
 
 pg.init()
